@@ -3,12 +3,17 @@
 
 // Dependencies 
 import react, { useState } from 'react';
+
+
+// CSS Dependencies 
 import { Box, Typography } from '@mui/material';
 
 
 // Components & Necessary Files 
+import Home from './Home';
+import Flashcard from './Flashcard';
 import Navbar from './Navbar';
-import '../App.css';
+import '../Static/App.css';
 
 
 // Notecrad Maker Application 
@@ -23,18 +28,8 @@ function App() {
       }}
     >
       <Navbar />
-      {/* <Typography
-        variant = 'h2'
-        sx = {{ 
-          display: 'flex',
-          justifyContent: 'center',
-          marginTop: '6rem'
-        }}
-      >
-        Stacks 
-      </Typography> */}
+      <Home /> 
 
-      
     </div>
   );
 }
